@@ -1,0 +1,12 @@
+C:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\studentDataAccessLayer\bin\Debug\net8.0\studentDataAccessLayer.deps.json
+C:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\studentDataAccessLayer\bin\Debug\net8.0\studentDataAccessLayer.dll
+C:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\studentDataAccessLayer\bin\Debug\net8.0\studentDataAccessLayer.pdb
+C:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\studentDataAccessLayer\obj\Debug\net8.0\studentDataAccessLayer.csproj.AssemblyReference.cache
+C:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\studentDataAccessLayer\obj\Debug\net8.0\studentDataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\studentDataAccessLayer\obj\Debug\net8.0\studentDataAccessLayer.AssemblyInfoInputs.cache
+C:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\studentDataAccessLayer\obj\Debug\net8.0\studentDataAccessLayer.AssemblyInfo.cs
+C:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\studentDataAccessLayer\obj\Debug\net8.0\studentDataAccessLayer.csproj.CoreCompileInputs.cache
+C:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\studentDataAccessLayer\obj\Debug\net8.0\studentDataAccessLayer.dll
+C:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\studentDataAccessLayer\obj\Debug\net8.0\refint\studentDataAccessLayer.dll
+C:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\studentDataAccessLayer\obj\Debug\net8.0\studentDataAccessLayer.pdb
+C:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\studentDataAccessLayer\obj\Debug\net8.0\ref\studentDataAccessLayer.dll

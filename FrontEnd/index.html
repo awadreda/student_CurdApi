@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <title>Students</title>
+</head>
+ <style>
+
+   /* WebKit-based browsers (Chrome, Safari, Edge) */
+        *::-webkit-scrollbar {
+            width: 10px; /* Width of the scrollbar */
+            height: 10px; /* Height of the scrollbar for horizontal scrolling */
+        }
+
+        /* Remove the arrows in WebKit browsers */
+        
+        /* Scrollbar track (the background) */
+        *::-webkit-scrollbar-track {
+          background: #e0f7fa; /* Light blue background for the track */
+        }
+
+        /* Scrollbar thumb (the draggable part) */
+        *::-webkit-scrollbar-thumb {
+          background-color: #03a9f4; /* Slightly darker blue for the thumb */
+          border-radius: 10px; /* Rounded corners */
+        }
+
+        /* Scrollbar thumb hover effect */
+        *::-webkit-scrollbar-thumb:hover {
+            background-color: #0288d1; /* Even darker blue when hovering */
+          }
+          
+          /* Firefox scrollbar styles */
+          * {
+            scrollbar-width: thin; /* Make the scrollbar thinner */
+            scrollbar-color: #015379 #e0f7fa; /* Light blue track and dark blue thumb */
+          }
+          
+          *::-webkit-scrollbar-button {
+              display: none;
+              width: 0;
+              height:  0;
+          }
+          
+    </style>
+
+<body>
+  
+  <div id="page-content">
+
+    
+    <nav class="p-3 text-center mb-10 bg-slate-700 text-white">
+      <div id="logo" class="font-bold text-lg">Students</div>
+      
+    </nav>
+    
+    
+    <div class="container mx-auto">
+      <h1 class="text-2xl pl-2 font-bold mb-4">Student List</h1>
+      
+      <div id="Controls" class="flex justify-between">
+        
+        <button id="ShowAllStudents" class="bg-slate-800 text-white font-bold p-2 rounded-md m-4 hover:bg-slate-700 duration-300">Show All Students</button>
+        
+        <button id="addNewStudent" class="bg-blue-600 text-white font-bold p-2 rounded-full m-4 hover:bg-blue-700 duration-300 flex items-center justify-between" ><span class="font-bold pb-1 text-2xl">+</span> New Student</button>
+
+        <button id="PassedStudents" class="bg-green-700 text-white font-bold p-2 rounded-md m-4 hover:bg-green-900 duration-300">Show Passed Students</button>
+        
+      </div>
+      <div class="overflow-x-auto overflow-y-auto " style="max-height: 450px;">
+        <table id="listStudent" class="min-w-full bg-white border border-gray-300">
+    <thead>
+    <tr>
+      <th class="px-4 py-2 bg-gray-200 text-left text-xl font-semibold text-gray-700 border-b">ID</th>
+        <th class="px-4 py-2 bg-gray-200 text-left text-xl font-semibold text-gray-700 border-b">Name</th>
+        <th class="px-4 py-2 bg-gray-200 text-left text-xl font-semibold text-gray-700 border-b">Age</th>
+        <th class="px-4 py-2 bg-gray-200 text-left text-xl font-semibold text-gray-700 border-b">Grade</th>
+        <th class="px-4 py-2 bg-gray-200  text-xl text-center font-semibold text-gray-700 border-b">Settings</th>
+        
+      </tr>
+    </thead>
+    <tbody id="tbodyStudents" class="">
+      <tr class="hover:bg-slate-300 duration-300">
+        <td class="px-4 py-2 border-b text-xl text-gray-700">1</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">John Doe</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">20</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">A</td>
+        <td class="px-4 py-2 border-b flex justify-around "><i id="EditStudentIcon" data-StudentID="0" class="ri-edit-box-line font-bold text-2xl cursor-pointer hover:text-blue-800 duration-300 text-blue-600"></i> <i id="EditStudentIcon" data-StudentID="0" class="ri-delete-bin-line font-bold text-2xl cursor-pointer hover:text-red-800 duration-300 text-red-600"></i></td>
+      </tr>
+      <tr class="hover:bg-slate-300 duration-300">
+        <td class="px-4 py-2 border-b text-xl text-gray-700">2</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">Jane Smith</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">22</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">B+</td>
+        <td class="px-4 py-2 border-b flex justify-around "><i id="EditStudentIcon" data-StudentID="0" class="ri-edit-box-line font-bold text-2xl cursor-pointer hover:text-blue-800 duration-300 text-blue-600"></i> <i id="EditStudentIcon" data-StudentID="0" class="ri-delete-bin-line font-bold text-2xl cursor-pointer hover:text-red-800 duration-300 text-red-600"></i></td>
+        
+      </tr>
+      <tr class="hover:bg-slate-300 duration-300">
+        <td class="px-4 py-2 border-b text-xl text-gray-700">3</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">Alice Johnson</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">21</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">A-</td>
+              <td class="px-4 py-2 border-b flex justify-around "><i id="EditStudentIcon" data-StudentID="0" class="ri-edit-box-line font-bold text-2xl cursor-pointer hover:text-blue-800 duration-300 text-blue-600"></i> <i id="EditStudentIcon" data-StudentID="0" class="ri-delete-bin-line font-bold text-2xl cursor-pointer hover:text-red-800 duration-300 text-red-600"></i></td>
+
+            </tr>
+    <tr class="hover:bg-slate-300 duration-300">
+      <td class="px-4 py-2 border-b text-xl text-gray-700">4</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">Bob Brown</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">23</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">B</td>
+              <td class="px-4 py-2 border-b flex justify-around "><i id="EditStudentIcon" data-StudentID="0" class="ri-edit-box-line font-bold text-2xl cursor-pointer hover:text-blue-800 duration-300 text-blue-600"></i> <i id="EditStudentIcon" data-StudentID="0" class="ri-delete-bin-line font-bold text-2xl cursor-pointer hover:text-red-800 duration-300 text-red-600"></i></td>
+
+      </tr>
+    <tr class="hover:bg-slate-300 duration-300">
+        <td class="px-4 py-2 border-b text-xl text-gray-700">4</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">Bob Brown</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">23</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">B</td>
+        <td class="px-4 py-2 border-b flex justify-around "><i id="EditStudentIcon" data-StudentID="0" class="ri-edit-box-line font-bold text-2xl cursor-pointer hover:text-blue-800 duration-300 text-blue-600"></i> <i id="EditStudentIcon" data-StudentID="0" class="ri-delete-bin-line font-bold text-2xl cursor-pointer hover:text-red-800 duration-300 text-red-600"></i></td>
+      </tr>
+      <tr class="hover:bg-slate-300 duration-300">
+        <td class="px-4 py-2 border-b text-xl text-gray-700">4</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">Bob Brown</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">23</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">B</td>
+        <td class="px-4 py-2 border-b flex justify-around "><i id="EditStudentIcon" data-StudentID="0" class="ri-edit-box-line font-bold text-2xl cursor-pointer hover:text-blue-800 duration-300 text-blue-600"></i> <i id="EditStudentIcon" data-StudentID="0" class="ri-delete-bin-line font-bold text-2xl cursor-pointer hover:text-red-800 duration-300 text-red-600"></i></td>
+        
+      </tr>
+      <tr class="hover:bg-slate-300 duration-300">
+        <td class="px-4 py-2 border-b text-xl text-gray-700">4</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">Bob Brown</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">23</td>
+        <td class="px-4 py-2 border-b text-xl text-gray-700">B</td>
+        <td class="px-4 py-2 border-b flex justify-around "><i id="EditStudentIcon" data-StudentID="0" class="ri-edit-box-line font-bold text-2xl cursor-pointer hover:text-blue-800 duration-300 text-blue-600"></i> <i id="EditStudentIcon" data-StudentID="0" class="ri-delete-bin-line font-bold text-2xl cursor-pointer hover:text-red-800 duration-300 text-red-600"></i></td>
+        
+      </tr>
+    </tbody>
+  </table>
+    </div>
+    
+    <div id="avargeDiv" class="  px-3 mx-auto mt-8 text-white bg-blue-600 p-2 rounded-md hover:bg-blue-800 duration-300  font-bold flex items-center justify-between">
+      Avarge Grade  <span id="AvargaeValue" class="font-bold text-green-600 text-2xl">55</span>
+    </div>
+    
+  </div>
+  
+
+  <div id="FindStudentDiv" class="container mx-auto mt-20">
+    
+    
+    <div id="searchBox" class="h-fit flex justify-between  ">
+      
+      <h1 class="text-2xl text-center w-fit pr-4 font-bold">Find Student By ID</h1>
+      
+      <div id="lol" class="">
+        
+        <button id="btnFindID" class="bg-blue-600 text-white p-2 rounded-md font-bold">Find Student</button>
+        <input id="StudentIDValue" type="number" class="bg-slate-300 p-2 rounded-md h-full "   placeholder="input the ID">
+      </div>
+      
+      
+    </div>
+    
+    <div id="studentCard" class="relative duration-500 bg-gray-200 rounded-md p-4 py-6 w-1/3 mx-auto my-5 font-bold">
+      
+      
+      <h2 class="text-center text-2xl">Student</h2>
+      
+    </div>
+    
+    
+    
+  </div>
+  
+      
+  <!-- DeletStudent -->
+  
+      <!-- <div id="deletDev" style="width: 500px; height: 150px; top: 250px; left:50%; transform: translate(-50%);" class=" absolute  z-10  bg-white  rounded-md border border-blue-200 text-center   mx-auto  ">
+        
+        <h2 class="text-3xl font-bold my-8 ">Remove Student With ID 2</h2>
+        
+        <div id="ConfrmDeletbtns" class="flex justify-around w-3/4 mx-auto">
+          
+          <button data-StudentID="0" class="bg-red-600 text-white font-bold px-2 py-1 hover:bg-red-700 duration-300 rounded-md">Remove</button>
+          <button  class="bg-green-600 text-white font-bold px-2 py-1 hover:bg-green-700 duration-300 rounded-md">Cancel</button>
+        </div>
+        
+        
+        
+      </div> -->
+      
+      
+      <!-- DeletStudent -->
+      
+      
+      <div id="disabledContent" style="opacity: .6; height: 150%; z-index: 5;" class="hidden bg-black w-full top-0 left-0 absolute "></div>
+      
+      
+      
+      <!-- AddNEwStudent -->
+      
+        <div id="AddNewDiv" style="width: 450px;  top: 250px; left:50%; transform: translate(-50%);" class=" flex flex-col items-center absolute  z-10  bg-white  rounded-md border border-blue-200 text-center   mx-auto ">
+
+          
+          <h2 class="font-bold text-2xl m-3">Add New Student</h2>
+
+          <div id="inputs">
+
+            <div id="nameInputDiv" class="m-2 w-fit p-2">
+              <label for="NameInput">Name :</label>
+              <input id="NameInput" type="text" placeholder="Your Name" class="bg-slate-200 rounded-md p-1 pl-2">
+            </div>
+            
+            
+            <div id="AgeInputDiv" class="m-2 w-fit p-2">
+              <label for="AgeInput" class="mr-3">Age :</label>
+              <input id="AgeInput" type="number" min="0" placeholder="Your Age" class="bg-slate-200 rounded-md p-1 pl-2">
+            </div>
+            
+            
+            <div id="GradeInputDiv" class="m-2 w-fit p-2">
+              <label for="GradeInput">Grade :</label>
+            <input id="GradeInput" min="0" type="number" placeholder="Your Grade" class="bg-slate-200 rounded-md p-1 pl-2">
+          </div>
+          
+        </div>
+
+        <div id="btns" class="m-4 w-3/4 flex  justify-around">
+          <button id="AddNewStudentBtn" class="  bg-blue-600 text-white font-bold px-2 py-1 hover:bg-blue-700 duration-300 rounded-md">Add New</button>
+          <button id="CloseAddnew" class="bg-red-600 text-white font-bold px-2 py-1 hover:bg-red-700 duration-300 rounded-md"> Close </button>
+        </div>
+
+
+        </div>
+
+      
+      <!-- AddNEwStudent -->
+      
+      
+    </div>
+      
+      <style>
+        
+  
+
+
+  </style>
+
+<script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+{
+  "format": 1,
+  "restore": {
+    "c:\\AwadDev\\WebDev\\BackEnd\\learningBack\\.NET\\WebAPI\\Hadhoud.api\\StudenstProject\\StudentBuisnessLayer\\StudentBuisnessLayer.csproj": {}
+  },
+  "projects": {
+    "c:\\AwadDev\\WebDev\\BackEnd\\learningBack\\.NET\\WebAPI\\Hadhoud.api\\StudenstProject\\StudentBuisnessLayer\\StudentBuisnessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\AwadDev\\WebDev\\BackEnd\\learningBack\\.NET\\WebAPI\\Hadhoud.api\\StudenstProject\\StudentBuisnessLayer\\StudentBuisnessLayer.csproj",
+        "projectName": "StudentBuisnessLayer",
+        "projectPath": "c:\\AwadDev\\WebDev\\BackEnd\\learningBack\\.NET\\WebAPI\\Hadhoud.api\\StudenstProject\\StudentBuisnessLayer\\StudentBuisnessLayer.csproj",
+        "packagesPath": "C:\\Users\\Alsayad Electronics\\.nuget\\packages\\",
+        "outputPath": "c:\\AwadDev\\WebDev\\BackEnd\\learningBack\\.NET\\WebAPI\\Hadhoud.api\\StudenstProject\\StudentBuisnessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Alsayad Electronics\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "c:\\AwadDev\\WebDev\\BackEnd\\learningBack\\.NET\\WebAPI\\Hadhoud.api\\StudenstProject\\studentDataAccessLayer\\studentDataAccessLayer.csproj": {
+                "projectPath": "c:\\AwadDev\\WebDev\\BackEnd\\learningBack\\.NET\\WebAPI\\Hadhoud.api\\StudenstProject\\studentDataAccessLayer\\studentDataAccessLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\AwadDev\\WebDev\\BackEnd\\learningBack\\.NET\\WebAPI\\Hadhoud.api\\StudenstProject\\studentDataAccessLayer\\studentDataAccessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\AwadDev\\WebDev\\BackEnd\\learningBack\\.NET\\WebAPI\\Hadhoud.api\\StudenstProject\\studentDataAccessLayer\\studentDataAccessLayer.csproj",
+        "projectName": "studentDataAccessLayer",
+        "projectPath": "c:\\AwadDev\\WebDev\\BackEnd\\learningBack\\.NET\\WebAPI\\Hadhoud.api\\StudenstProject\\studentDataAccessLayer\\studentDataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\Alsayad Electronics\\.nuget\\packages\\",
+        "outputPath": "c:\\AwadDev\\WebDev\\BackEnd\\learningBack\\.NET\\WebAPI\\Hadhoud.api\\StudenstProject\\studentDataAccessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Alsayad Electronics\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

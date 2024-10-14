@@ -1,0 +1,15 @@
+c:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\StudentBuisnessLayer\bin\Debug\net8.0\StudentBuisnessLayer.deps.json
+c:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\StudentBuisnessLayer\bin\Debug\net8.0\StudentBuisnessLayer.dll
+c:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\StudentBuisnessLayer\bin\Debug\net8.0\StudentBuisnessLayer.pdb
+c:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\StudentBuisnessLayer\bin\Debug\net8.0\studentDataAccessLayer.dll
+c:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\StudentBuisnessLayer\bin\Debug\net8.0\studentDataAccessLayer.pdb
+c:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\StudentBuisnessLayer\obj\Debug\net8.0\StudentBuisnessLayer.csproj.AssemblyReference.cache
+c:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\StudentBuisnessLayer\obj\Debug\net8.0\StudentBuisnessLayer.GeneratedMSBuildEditorConfig.editorconfig
+c:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\StudentBuisnessLayer\obj\Debug\net8.0\StudentBuisnessLayer.AssemblyInfoInputs.cache
+c:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\StudentBuisnessLayer\obj\Debug\net8.0\StudentBuisnessLayer.AssemblyInfo.cs
+c:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\StudentBuisnessLayer\obj\Debug\net8.0\StudentBuisnessLayer.csproj.CoreCompileInputs.cache
+c:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\StudentBuisnessLayer\obj\Debug\net8.0\StudentB.F20EC492.Up2Date
+c:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\StudentBuisnessLayer\obj\Debug\net8.0\StudentBuisnessLayer.dll
+c:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\StudentBuisnessLayer\obj\Debug\net8.0\refint\StudentBuisnessLayer.dll
+c:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\StudentBuisnessLayer\obj\Debug\net8.0\StudentBuisnessLayer.pdb
+c:\AwadDev\WebDev\BackEnd\learningBack\.NET\WebAPI\Hadhoud.api\StudenstProject\StudentBuisnessLayer\obj\Debug\net8.0\ref\StudentBuisnessLayer.dll
